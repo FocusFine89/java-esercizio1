@@ -4,21 +4,7 @@ public class Main {
         System.out.println(result);
 
         concat("ciao", 23);
-        String[] stringArray= {"a","b","c","d","e"};
-        String[] stringArray2 = new String[6];
-        stringArray2[0]="a";
-        stringArray2[1]="b";
-        stringArray2[2]="g";
-        stringArray2[3]="c";
-        stringArray2[4]="d";
-        stringArray2[5]="e";
-        for (int i = 0; i < stringArray.length; i++) {
-           System.out.println("Elemento "+i + ":"+ stringArray[i]);
-        };
 
-        for (int i = 0; i < stringArray2.length; i++) {
-            System.out.println("Elemento "+i + ":"+ stringArray[i]);
-        };
     }
 
     public static int moltiplicatore(int num1, int num2){
@@ -26,5 +12,16 @@ public class Main {
     }
     public static void concat(String a, int b){
        System.out.println(a + b);
+
+    }
+    public static String[] arrayDuplicato(String[] firstArray, String itemArray){
+        String[] newArray= new String[6];
+        newArray[0]=firstArray[0];
+        newArray[1]=firstArray[1];
+        newArray[2]=itemArray;
+        newArray[3]=firstArray[2];
+        newArray[4]=firstArray[3];
+        newArray[5]=firstArray[4];
+        return newArray;
     }
 }
